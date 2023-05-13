@@ -1,0 +1,296 @@
+body {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    background: #ffffff;
+    padding: 0;
+    min-width: 500px;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+a {
+    color: black;
+}
+
+.main {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    max-width: 1280px;
+    min-width: 500px;
+    height: max-content;
+    background-color: rgb(169, 169, 169);
+}
+
+.attic {
+    position: relative;
+    display: inline-block;
+    background-image: url("/static/img/carbon3.png");
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    height: 3.3vw;
+}
+
+.attic_element {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.home_button {
+    display: inline-block;
+    position: absolute;
+    background: #f10631;
+    top: 0.9vw;
+    left: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 0.75vw;
+    box-shadow: 4px 2px #000;
+    font-family: Verdana, sans-serif;
+    font-size: 1vw;
+}
+
+.home_button:hover {
+    top: 0.65vw;
+    left: 1.75vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+}
+
+.home_button:hover::after {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    top: -0.8vw;
+    left: -1.5vw;
+    background-color: rgba(29, 29, 29, 0.93);
+    content: attr(data-title);
+    z-index: 1;
+    width: auto;
+}
+
+.feedback_button {
+    display: inline-block;
+    position: absolute;
+    background: #70f106;
+    top: 0.9vw;
+    left: 5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 0.75vw;
+    box-shadow: 4px 2px #000;
+    font-family: Verdana, sans-serif;
+    font-size: 1vw;
+    z-index: 0;
+}
+
+.feedback_button:hover {
+    top: 0.65vw;
+    left: 4.75vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+}
+
+.feedback_button:hover::after {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    top: -0.8vw;
+    left: -1.7vw;
+    background-color: rgba(29, 29, 29, 0.93);
+    content: attr(data-title);
+    z-index: 1;
+    width: auto;
+}
+
+.login_button {
+    display: inline-block;
+    position: absolute;
+    background: #f1e506;
+    top: 0.9vw;
+    left: 8vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 0.75vw;
+    box-shadow: 4px 2px #000;
+    font-family: Verdana, sans-serif;
+    font-size: 1vw;
+}
+
+.login_button:hover {
+    top: 0.65vw;
+    left: 7.75vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+}
+
+.login_button:hover::after {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    top: -0.8vw;
+    left: -0.2vw;
+    background-color: rgba(29, 29, 29, 0.93);
+    content: attr(data-title);
+    z-index: 1;
+    width: auto;
+}
+
+.page_head {
+    position: relative;
+    padding: 1vw 0 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 8vw;
+    background: #f10631;
+}
+
+.content_page_head {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    margin: auto;
+    font-size: 5vw;
+}
+
+.menu {
+    position: relative;
+    color: azure;
+    text-align: center;
+    font-size: 1.3vw;
+    background-image: url("/static/img/carbon3.png");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 3.3vw;
+}
+
+.menu-button {
+    margin-top: 1.5vw;
+    display: inline-block;
+    width: 8vw;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, sans-serif;
+    background: #f10631;
+    border: 1px solid black;
+    box-shadow: 5px 3px #000;
+}
+
+.menu-button:hover {
+    background-color: black;
+    box-shadow: 0 0;
+    color: #f1ca06;
+}
+
+.content {
+    position: relative;
+    width: 60vw;
+    font-size: 20px;
+    font-family: "Franklin Gothic Book";
+    color: rgba(12, 12, 89, 0.93);
+    text-align: justify;
+    background: #ffffff;
+    box-shadow: 5px 3px 10px #000;
+    /*text-shadow: 5px 3px 10px #000;*/
+    padding: 2vw;
+    margin: 2vw auto 2vw;
+}
+
+.tab {
+    margin-left: 20px;
+}
+
+.table {
+    text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+
+.table td:last-child {
+    text-align: justify;
+}
+
+.table li {
+	list-style: none;
+}
+
+.footer {
+    width: 100%;
+    height: 5vw;
+    background: rgba(29,29,29,0.93)
+}
+
+ul {
+    padding: 0;
+}
+
+/*il {*/
+/*    margin-right: 5vw;*/
+/*    margin-left: 5vw;*/
+/*}*/
+
+.input {
+    position: absolute;
+    left: 10vw;
+    width: 20vw;
+    height: 1.8vw;
+    font-family: Verdana, sans-serif;
+    font-size: 1vw;
+}
+
+.textarea {
+    width: 60vw;
+    font-family: Verdana, sans-serif;
+    font-size: 1vw;
+}
+
+.flash {
+    border: black;
+    height: 2vw;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+.flash.success {
+    background: #72bf7c;
+
+}
+
+.flash.error {
+    background: #bf7272;
+}
+
+.error404 {
+    margin-left: 15vw;
+    width: 30vw;
+    height: 30vw;
+
+}

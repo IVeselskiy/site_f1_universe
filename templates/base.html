@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">-->
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    {% block title -%}
+    {% if title %}
+    <title> F1 - universe - {{ title }} </title>
+    {% else %}
+    <title> F1 - universe </title>
+    {% endif %}
+    {% endblock %}
+</head>
+<body>
+<div class="main">
+    {% block attic %}
+    <div class="attic">
+        <li class="attic_element">
+            <a href="/">
+                <div class="home_button" data-title="На главную"></div>
+            </a>
+        </li>
+        <li class="attic_element">
+            <a href="/feedback">
+                <div class="feedback_button" data-title="Написать нам"></div>
+            </a>
+        </li>
+
+        <li class="attic_element">
+            <a href="/feedback">
+                <div class="login_button" data-title="Войти"></div>
+            </a>
+        </li>
+
+    </div>
+    {% endblock %}
+
+    {% block header %}
+    <div class="page_head">
+        <h1 class="content_page_head">///F1 - universe///</h1>
+    </div>
+    {% endblock %}
+
+    {% block mainmenu %}
+    <div class="menu">
+        <ul class="menu">
+            {% for m in menu -%}
+            <il class="menu_element">
+                <a href="{{ m.url }}">
+                    <div class="menu-button">{{ m.name }}</div>
+                </a>
+            </il>
+            {% endfor -%}
+        </ul>
+    </div>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        {% block footer %}
+        <div class="footer">
+            <h3>Some text</h3>
+        </div>
+        {% endblock %}
+    </footer>
+</div>
+</body>
+</html>
